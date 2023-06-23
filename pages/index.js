@@ -27,7 +27,7 @@ export default function Home() {
 
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
-
+  
       const imageMap = {
         'ZTNA Connector': 'ztna.png',
         'output2': 'colo.png',
@@ -35,7 +35,7 @@ export default function Home() {
         // add more mappings here as needed
       };
 
-      setResult(imageMap[animalInput.toLowerCase()]);
+      setResult(imageMap[data.result.toLowerCase()]);
       setAnimalInput("");
     } catch(error) {
       // Consider implementing your own error handling logic here
