@@ -30,12 +30,12 @@ export default function Home() {
   
       const imageMap = {
         'ZTNA Connector': 'ztna.png',
-        'output2': 'colo.png',
-        'output3': 'sc.png',
+        'Colo Connector': 'colo.png',
+        'Service Connection': 'sc.png',
         // add more mappings here as needed
       };
 
-      setResult(imageMap[data.result.toLowerCase()]);
+      setResult(imageMap[data.result]);
       setAnimalInput("");
     } catch(error) {
       // Consider implementing your own error handling logic here
